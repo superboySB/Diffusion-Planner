@@ -6,10 +6,10 @@ export HYDRA_FULL_ERROR=1
 # User Configuration Section
 ###################################
 # Set environment variables
-export NUPLAN_DEVKIT_ROOT="/home/dzp/Documents/nuplan-devkit"  # nuplan-devkit absolute path (e.g., "/home/user/nuplan-devkit")
-export NUPLAN_DATA_ROOT="/home/dzp/Downloads/for_waymax/tiny_nuplan/data"  # nuplan dataset absolute path (e.g. "/data")
-export NUPLAN_MAPS_ROOT="/home/dzp/Downloads/for_waymax/tiny_nuplan/maps" # nuplan maps absolute path (e.g. "/data/nuplan-v1.1/maps")
-export NUPLAN_EXP_ROOT="/home/dzp/Downloads/for_waymax/tiny_nuplan" # nuplan experiment absolute path (e.g. "/data/nuplan-v1.1/exp")
+export NUPLAN_DEVKIT_ROOT="/workspace/nuplan-devkit"  # nuplan-devkit absolute path (e.g., "/home/user/nuplan-devkit")
+export NUPLAN_DATA_ROOT="/workspace/datasets/tiny_nuplan/data"  # nuplan dataset absolute path (e.g. "/data")
+export NUPLAN_MAPS_ROOT="/workspace/datasets/tiny_nuplan/maps" # nuplan maps absolute path (e.g. "/data/nuplan-v1.1/maps")
+export NUPLAN_EXP_ROOT="/workspace/datasets/tiny_nuplan" # nuplan experiment absolute path (e.g. "/data/nuplan-v1.1/exp")
 
 # Dataset split to use
 # Options: 
@@ -27,8 +27,8 @@ CHALLENGE="closed_loop_nonreactive_agents"  # e.g., "closed_loop_nonreactive_age
 
 
 BRANCH_NAME=diffusion_planner_release
-ARGS_FILE=/home/dzp/projects/Diffusion-Planner/checkpoints/args.json
-CKPT_FILE=/home/dzp/projects/Diffusion-Planner/checkpoints/model.pth
+ARGS_FILE=/workspace/Diffusion-Planner/checkpoints/args.json
+CKPT_FILE=/workspace/Diffusion-Planner/checkpoints/model.pth
 
 if [ "$SPLIT" == "val14" ]; then
     SCENARIO_BUILDER="nuplan"
