@@ -14,7 +14,7 @@ setuptools.setup(
     packages=["diffusion_planner"],
     package_dir={"": "."},
     classifiers=[
-        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.8",
         "Operating System :: OS Independent",
         "License :: Free for non-commercial use",
     ],
